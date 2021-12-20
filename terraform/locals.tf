@@ -7,9 +7,7 @@ locals {
     azurerm_kubernetes_cluster = format("%s-%s-aks", var.environment, local.id)
     azurerm_storage_account    = format("sa%s%saks", var.environment, local.id)
     azurerm_public_ip          = format("pip-%s-%s-aks", var.environment, local.id)
-    #service_principal  = format("sp-%s-%s-aks", var.environment, local.id)
   }
-
 }
 
 resource "random_string" "id" {
