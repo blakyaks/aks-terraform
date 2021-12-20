@@ -6,6 +6,8 @@
 - Perform `az login` prior to executing Terraform code (or set environment variables to support the `azurerm` provider);
 - If using CLI context, ensure you have targeted the correct subscription using `az account set --subscription <sub>` prior to execution.
 
+> Note: The Terraform is not currently configured for a remote backend
+
 ## Requirements
 
 | Name | Version |
